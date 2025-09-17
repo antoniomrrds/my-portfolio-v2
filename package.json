@@ -11,7 +11,10 @@
     "commit": "cz"
   },
   "dependencies": {
+    "D": "^1.0.0",
+    "i": "^0.3.7",
     "next": "15.5.3",
+    "npm": "^11.6.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -24,7 +27,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "commitizen": "^4.3.1",
-    "cz-emoji": "1.3.2-canary.2",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-emoji-conventional": "^1.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "husky": "^9.1.7",
@@ -33,7 +37,8 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-emoji"
+      "path": "node_modules/cz-emoji-conventional",
+      "useGitmojis": true
     }
   }
 }
